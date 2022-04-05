@@ -2,18 +2,16 @@ import Head from "next/head";
 // Models
 import { ISEO } from "@models/SEO";
 
-const defaultSEOData: ISEO = {
-	title: "Tsuini.com",
-	description: "Música japonesa traducida al español",
-};
+const defaultTitle = "Tsuini.com";
+const defaultDescription = "Música japonesa traducida al español";
 
-const SEO: React.FC<ISEO> = (seo = defaultSEOData) => {
-	const { title, description, image } = seo;
-
+const SEO: React.FC<ISEO> = ({
+	title = defaultTitle,
+	description = defaultDescription,
+	image,
+}) => {
 	return (
 		<Head>
-			<link rel="icon" href="/favicon.ico" />
-
 			<title>{title}</title>
 			<meta name="description" content={description} />
 			{image && <meta name="image" content={image} />}
@@ -22,9 +20,9 @@ const SEO: React.FC<ISEO> = (seo = defaultSEOData) => {
 			<meta name="og:description" content={description} />
 			{image && <meta name="og:image" content={image} />}
 
-			<meta name="twitter:card" content="summary_large_image" />
 			<meta name="twitter:title" content={title} />
 			<meta name="twitter:description" content={description} />
+			<meta name="twitter:card" content="summary_large_image" />
 			{image && <meta name="twitter:image" content={image} />}
 		</Head>
 	);
