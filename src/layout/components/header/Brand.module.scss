@@ -1,0 +1,19 @@
+@import "@styles/colors";
+@import "@styles/fontSizes";
+@import "@styles/spacing";
+
+.brand {
+	color: inherit;
+	font-size: $fs-2xl;
+	padding: $sp-3 $sp-8 $sp-3 $sp-3;
+	display: flex;
+	align-items: center;
+	font-weight: 600;
+
+	&::before {
+		content: "";
+		width: 25px;
+		height: 25px;
+		background-color: $clr-primary;
+	}
+}

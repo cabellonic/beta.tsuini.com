@@ -1,0 +1,24 @@
+@import "@styles/spacing";
+@import "@styles/fontSizes";
+@import "@styles/colors";
+@import "@styles/borderRadius";
+
+.main_nav {
+	display: flex;
+	flex: 0 1 62.5rem;
+}
+
+.main_nav__link {
+	padding: $sp-3;
+	display: flex;
+	gap: $sp-3;
+	align-items: center;
+	font-weight: 400;
+	color: inherit;
+	transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
+
+	&.active,
+	&:hover {
+		background-color: $clr-primary-dkr;
+	}
+}

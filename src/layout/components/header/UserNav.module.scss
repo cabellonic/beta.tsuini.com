@@ -1,0 +1,42 @@
+@import "@styles/spacing";
+@import "@styles/fontSizes";
+@import "@styles/colors";
+
+.user_nav {
+	display: flex;
+	align-items: center;
+}
+
+.search {
+	display: flex;
+	align-items: center;
+	color: inherit;
+	font-size: $fs-2xl;
+	padding: $sp-3;
+	height: 100%;
+	transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
+
+	&:hover {
+		background-color: $clr-primary-dkr;
+	}
+}
+
+.user_info {
+	display: flex;
+	align-items: center;
+	color: inherit;
+	font-weight: normal;
+	padding: $sp-3;
+	transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
+
+	&:hover {
+		background-color: $clr-primary-dkr;
+	}
+}
+
+.user_avatar {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	margin-right: 10px;
+}

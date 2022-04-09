@@ -1,0 +1,16 @@
+@import "@styles/sizes";
+@import "@styles/fontSizes";
+@import "@styles/spacing";
+@import "@styles/colors";
+
+.header {
+	background-color: $clr-primary;
+	display: flex;
+	justify-content: center;
+	color: $clr-text-accent;
+	user-select: none;
+
+	a:hover {
+		color: inherit;
+	}
+}
