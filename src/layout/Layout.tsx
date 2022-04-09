@@ -1,6 +1,7 @@
 // Components
 import SEO from "./SEO";
 import Header from "./components/header/Header";
+import Footer from "./components/footer/Footer";
 // Models
 import { ISEO } from "@models/SEO";
 // Styles
@@ -16,6 +17,7 @@ const Layout: React.FC<LayoutProps> = ({ seo, children }) => {
 			<SEO {...seo} />
 			<Header />
 			{children}
+			<Footer />
 		</div>
 	);
 };

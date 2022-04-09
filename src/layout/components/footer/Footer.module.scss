@@ -1,3 +1,50 @@
+@import "@styles/fontSizes";
+@import "@styles/sizes";
+@import "@styles/spacing";
+@import "@styles/colors";
+
+.footer {
+	padding: $sp-10;
+	background: linear-gradient(180deg, $clr-primary 0%, $clr-primary-dk 100%);
+	color: $clr-text-accent;
+}
+
+.footer_wrapper {
+	display: flex;
+	flex-flow: wrap;
+	justify-content: center;
+	max-width: $wrapper;
+	margin: 0 auto;
+}
+
+.footer_section {
+	display: flex;
+	flex-flow: column;
+	width: 25%;
+}
+
+.footer_section__title {
+	font-size: $fs-lg;
+	margin-bottom: $sp-4;
+	font-weight: 600;
+}
+
 .footer_link {
+	display: flex;
+	align-items: center;
+	gap: $sp-2;
 	text-decoration: underline;
+	color: inherit;
+	width: fit-content;
+	margin-bottom: $sp-2;
+	font-size: $fs-sm;
+	text-decoration: none;
+	opacity: 0.8;
+	transition: opacity 0.1s ease-in-out;
+
+	&:hover {
+		opacity: 1;
+		color: inherit;
+		text-decoration: underline;
+	}
 }
