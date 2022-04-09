@@ -1,0 +1,27 @@
+$clr-primary: rgb(29, 93, 153);
+$clr-primary-lt: lighten($clr-primary, 7%);
+$clr-primary-ltr: lighten($clr-primary, 12%);
+$clr-primary-dk: darken($clr-primary, 7%);
+$clr-primary-dkr: darken($clr-primary, 12%);
+
+$clr-light: rgb(255 255 255);
+$clr-light-dk: darken($clr-light, 4%);
+$clr-light-dkr: darken($clr-light, 8%);
+
+$clr-dark: rgb(50, 63, 82);
+
+$clr-dark-lt: lighten($clr-dark, 7%);
+$clr-dark-ltr: lighten($clr-dark, 12%);
+$clr-dark-dk: darken($clr-dark, 7%);
+$clr-dark-dkr: darken($clr-dark, 12%);
+
+$clr-secondary: #fff;
+
+$clr-text: rgb(26, 25, 25);
+$clr-text-accent: rgb(237, 237, 237);
+$clr-link: rgb(79, 119, 179);
+$clr-link-hover: darken($clr-link, 12%);
+$clr-link-accent: rgb(156, 192, 245);
+$clr-link-accent-hover: lighten($clr-link, 12%);
+
+$clr-border: $clr-dark-ltr;

@@ -1,3 +1,5 @@
+@import "./colors";
+
 html,
 body {
 	padding: 0;
@@ -5,10 +7,19 @@ body {
 	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
 		Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
+body {
+	background-color: $clr-light;
+	color: $clr-text;
+}
 
 a {
-	color: inherit;
+	color: $clr-link;
 	text-decoration: none;
+	transition: color 0.1s ease-in-out;
+
+	&:hover {
+		color: $clr-link-hover;
+	}
 }
 
 * {
